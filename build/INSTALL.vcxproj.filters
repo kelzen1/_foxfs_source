@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\fcfd9acca480857ebc722354fa51372c\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AE7B0535-78F6-3671-8BC4-8A9416EABA38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

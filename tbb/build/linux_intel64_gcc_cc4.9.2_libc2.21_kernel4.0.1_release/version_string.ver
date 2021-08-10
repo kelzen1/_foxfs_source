@@ -1,0 +1,11 @@
+#define __TBB_VERSION_STRINGS(N) \
+#N": BUILD_HOST\t\tSwagMachine (x86_64)" ENDL \
+#N": BUILD_OS\t\tNAME=Arch Linux" ENDL \
+#N": BUILD_KERNEL\tLinux 4.0.1-1-ARCH #1 SMP PREEMPT Wed Apr 29 12:00:26 CEST 2015" ENDL \
+#N": BUILD_GCC\t\tg++ (GCC) 4.9.2 20150304 (prerelease)" ENDL \
+#N": BUILD_LIBC\t2.21" ENDL \
+#N": BUILD_LD\t\t" ENDL \
+#N": BUILD_TARGET\tintel64 on cc4.9.2_libc2.21_kernel4.0.1" ENDL \
+#N": BUILD_COMMAND\tg++ -DDO_ITT_NOTIFY -g -O2 -DUSE_PTHREAD -m64 -mrtm -fPIC -D__TBB_BUILD=1 -Wall -Wno-parentheses -Wno-non-virtual-dtor -I../../src -I../../src/rml/include -I../../include -I." ENDL \
+
+#define __TBB_DATETIME "So 31. Mai 05:50:51 UTC 2015"

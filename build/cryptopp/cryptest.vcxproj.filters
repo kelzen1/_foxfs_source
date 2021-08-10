@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\bench1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\bench2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\bench3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\validat10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\regtest1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\regtest2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\regtest3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\regtest4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\datatest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\fipsalgt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\fipstest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\dlltest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7644FE2D-5990-36F9-B2AF-68A721A8D52A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

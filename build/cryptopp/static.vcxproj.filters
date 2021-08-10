@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\56b78f540e7c18a6552703f98e3c073b\static.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\static" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AE7B0535-78F6-3671-8BC4-8A9416EABA38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

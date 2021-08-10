@@ -1,0 +1,1 @@
+C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\RelWithDebInfo\cryptopp-object.lib

@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EE9174AC-D9A3-30D9-8E95-A181F0315463}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cryptopp-shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cryptopp-shared.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cryptopp-shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\biulding</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cryptopp-shared.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cryptopp-shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cryptopp-shared.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cryptopp-shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cryptopp-shared.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cryptopp-shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="Debug";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0A00;CMAKE_INTDIR=\"Debug\";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="Debug";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/Debug/cryptopp-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/Debug/cryptopp-shared.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="Release";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR=\"Release\";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="Release";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/Release/cryptopp-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/Release/cryptopp-shared.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="MinSizeRel";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR=\"MinSizeRel\";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="MinSizeRel";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/MinSizeRel/cryptopp-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/MinSizeRel/cryptopp-shared.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="RelWithDebInfo";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR=\"RelWithDebInfo\";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="RelWithDebInfo";cryptopp_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/RelWithDebInfo/cryptopp-shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/RelWithDebInfo/cryptopp-shared.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/lotre/Desktop/Fox-build/FoxFS/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lotre/Desktop/Fox-build/FoxFS -BC:/Users/lotre/Desktop/Fox-build/FoxFS/build --check-stamp-file C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\3.20.0-rc2\CMakeASM_MASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/lotre/Desktop/Fox-build/FoxFS/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lotre/Desktop/Fox-build/FoxFS -BC:/Users/lotre/Desktop/Fox-build/FoxFS/build --check-stamp-file C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\3.20.0-rc2\CMakeASM_MASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/lotre/Desktop/Fox-build/FoxFS/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lotre/Desktop/Fox-build/FoxFS -BC:/Users/lotre/Desktop/Fox-build/FoxFS/build --check-stamp-file C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\3.20.0-rc2\CMakeASM_MASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/lotre/Desktop/Fox-build/FoxFS/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lotre/Desktop/Fox-build/FoxFS -BC:/Users/lotre/Desktop/Fox-build/FoxFS/build --check-stamp-file C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\3.20.0-rc2\CMakeASM_MASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rdrand.asm">
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</UseSafeExceptionHandlers>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_M_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</UseSafeExceptionHandlers>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_M_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</UseSafeExceptionHandlers>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">_M_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</UseSafeExceptionHandlers>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">_M_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </MASM>
+    <MASM Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rdseed.asm">
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</UseSafeExceptionHandlers>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_M_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</UseSafeExceptionHandlers>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_M_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</UseSafeExceptionHandlers>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">_M_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</UseSafeExceptionHandlers>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">_M_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </MASM>
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\cryptlib.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\cpu.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\integer.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\3way.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\adler32.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\algebra.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\algparam.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\allocate.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\arc4.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\aria.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\aria_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ariatab.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\asn.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\authenc.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\base32.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\base64.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\basecode.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\bfinit.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\blake2.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\blake2b_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\blake2s_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\blowfish.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\blumshub.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\camellia.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\cast.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\casts.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\cbcmac.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ccm.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\chacha.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\chacha_avx.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\chacha_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\chachapoly.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\cham.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\cham_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\channels.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\cmac.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\crc.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\crc_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\darn.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\default.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\des.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\dessp.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\dh.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\dh2.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\dll.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\donna_32.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\donna_64.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\donna_sse.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\dsa.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\eax.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ec2n.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\eccrypto.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ecp.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\elgamal.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\emsa2.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\eprecomp.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\esign.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\files.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\filters.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\fips140.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gcm.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gcm_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gf256.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gf2_32.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gf2n.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gf2n_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gfpcrypt.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gost.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\gzip.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\hc128.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\hc256.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\hex.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\hight.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\hmac.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\hrtimer.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ida.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\idea.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\iterhash.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\kalyna.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\kalynatab.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\keccak.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\keccak_core.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\keccak_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\lea.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\lea_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\luc.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\mars.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\marss.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\md2.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\md4.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\md5.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\misc.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\modes.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\mqueue.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\mqv.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\nbtheory.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\neon_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\oaep.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\osrng.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\padlkrng.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\panama.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\pkcspad.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\poly1305.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\polynomi.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ppc_power7.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ppc_power8.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ppc_power9.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ppc_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\pssr.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\pubkey.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\queue.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rabbit.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rabin.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\randpool.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rc2.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rc5.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rc6.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rdrand.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rdtables.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rijndael.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rijndael_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ripemd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rng.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rsa.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\rw.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\safer.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\salsa.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\scrypt.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\seal.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\seed.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\serpent.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sha.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sha3.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sha_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\shacal2.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\shacal2_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\shake.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\shark.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sharkbox.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\simeck.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\simon.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\simon128_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\skipjack.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sm3.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sm4.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sm4_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sosemanuk.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\speck.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\speck128_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\square.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\squaretb.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\sse_simd.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\strciphr.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\tea.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\tftables.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\threefish.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\tiger.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\tigertab.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\ttmac.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\tweetnacl.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\twofish.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\vmac.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\wake.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\whrlpool.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\xed25519.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\xtr.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\xtrcrypt.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\xts.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\zdeflate.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\zinflate.obj" />
+    <Object Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\$(Configuration)\zlib.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\ZERO_CHECK.vcxproj">
+      <Project>{B88B76FC-7F2C-36AC-ADC5-291B62B89474}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.vcxproj">
+      <Project>{A648EAFD-01E2-35C7-8EA1-B4C507F060A4}</Project>
+      <Name>cryptopp-object</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A648EAFD-01E2-35C7-8EA1-B4C507F060A4}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cryptopp-object</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cryptopp-object.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cryptopp-object.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cryptopp-object</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cryptopp-object.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cryptopp-object.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cryptopp-object</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cryptopp-object.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cryptopp-object.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cryptopp-object</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cryptopp-object.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cryptopp-object.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cryptopp-object</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0A00;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0A00;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/lotre/Desktop/Fox-build/FoxFS/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lotre/Desktop/Fox-build/FoxFS -BC:/Users/lotre/Desktop/Fox-build/FoxFS/build --check-stamp-file C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\3.20.0-rc2\CMakeASM_MASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/lotre/Desktop/Fox-build/FoxFS/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lotre/Desktop/Fox-build/FoxFS -BC:/Users/lotre/Desktop/Fox-build/FoxFS/build --check-stamp-file C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\3.20.0-rc2\CMakeASM_MASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/lotre/Desktop/Fox-build/FoxFS/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lotre/Desktop/Fox-build/FoxFS -BC:/Users/lotre/Desktop/Fox-build/FoxFS/build --check-stamp-file C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\3.20.0-rc2\CMakeASM_MASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/lotre/Desktop/Fox-build/FoxFS/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lotre/Desktop/Fox-build/FoxFS -BC:/Users/lotre/Desktop/Fox-build/FoxFS/build --check-stamp-file C:/Users/lotre/Desktop/Fox-build/FoxFS/build/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lotre\Desktop\Fox-build\FoxFS\build\CMakeFiles\3.20.0-rc2\CMakeASM_MASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\cryptlib.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\cpu.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\integer.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\3way.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\adler32.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\algebra.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\algparam.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\allocate.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\arc4.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\aria.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\aria_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ariatab.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\asn.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\authenc.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\base32.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\base64.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\basecode.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\bfinit.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\blake2.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\blake2b_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\blake2s_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\blowfish.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\blumshub.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\camellia.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\cast.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\casts.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\cbcmac.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ccm.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\chacha.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\chacha_avx.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\chacha_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\chachapoly.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\cham.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\cham_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\channels.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\cmac.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\crc.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\crc_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\darn.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\default.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\des.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\dessp.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\dh.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\dh2.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\dll.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\donna_32.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\donna_64.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\donna_sse.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\dsa.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\eax.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ec2n.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\eccrypto.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ecp.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\elgamal.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\emsa2.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\eprecomp.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\esign.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\files.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\filters.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\fips140.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gcm.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gcm_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gf256.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gf2_32.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gf2n.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gf2n_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gfpcrypt.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gost.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\gzip.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\hc128.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\hc256.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\hex.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\hight.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\hmac.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\hrtimer.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ida.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\idea.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\iterhash.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\kalyna.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\kalynatab.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\keccak.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\keccak_core.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\keccak_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\lea.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\lea_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\luc.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\mars.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\marss.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\md2.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\md4.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\md5.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\misc.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\modes.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\mqueue.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\mqv.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\nbtheory.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\neon_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\oaep.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\osrng.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\padlkrng.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\panama.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\pkcspad.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\poly1305.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\polynomi.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ppc_power7.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ppc_power8.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ppc_power9.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ppc_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\pssr.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\pubkey.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\queue.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rabbit.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rabin.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\randpool.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rc2.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rc5.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rc6.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rdrand.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rdtables.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rijndael.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rijndael_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ripemd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rng.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rsa.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\rw.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\safer.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\salsa.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\scrypt.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\seal.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\seed.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\serpent.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sha.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sha3.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sha_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\shacal2.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\shacal2_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\shake.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\shark.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sharkbox.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\simeck.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\simon.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\simon128_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\skipjack.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sm3.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sm4.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sm4_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sosemanuk.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\speck.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\speck128_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\square.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\squaretb.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\sse_simd.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\strciphr.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\tea.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\tftables.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\threefish.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\tiger.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\tigertab.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\ttmac.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\tweetnacl.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\twofish.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\vmac.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\wake.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\whrlpool.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\xed25519.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\xtr.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\xtrcrypt.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\xts.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\zdeflate.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\zinflate.cpp" />
+    <ClCompile Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\cryptopp\zlib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\lotre\Desktop\Fox-build\FoxFS\build\ZERO_CHECK.vcxproj">
+      <Project>{B88B76FC-7F2C-36AC-ADC5-291B62B89474}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

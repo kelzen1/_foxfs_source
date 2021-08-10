@@ -1,0 +1,2 @@
+C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\Debug\cryptopp-object.lib
+C:\Users\lotre\Desktop\Fox-build\FoxFS\build\cryptopp\cryptopp-object.dir\Debug\cryptopp-object.pdb
